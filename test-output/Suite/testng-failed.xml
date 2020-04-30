@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="FinalProject.HomePage_Test">
+        <methods>
+          <include name="NavigateToBasePage" invocation-numbers="0 1"/>
+          <include name="getLanding"/>
+        </methods>
+      </class> <!-- FinalProject.HomePage_Test -->
+      <class name="FinalProject.ValidationNavbar">
+        <methods>
+          <include name="getLanding"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FinalProject.ValidationNavbar -->
+      <class name="FinalProject.ValidationTitlePage">
+        <methods>
+          <include name="getLanding"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FinalProject.ValidationTitlePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

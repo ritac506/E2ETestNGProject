@@ -1,6 +1,9 @@
 package FinalProject;
 
 import java.io.IOException;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -9,11 +12,17 @@ import PageObjects.LoginPage;
 import resources.BasePage;
 
 public class HomePage_Test extends BasePage {
+	
+	@BeforeTest
+	public void getLanding() throws IOException {
+	driver = InitDriver();
+
+	}
 
 	@Test(dataProvider = "getData")
 	public void NavigateToBasePage(String username, String password) throws IOException {
-		driver = InitDriver();
-		driver.get(prop.getProperty("url"));;
+		
+		driver.get(prop.getProperty("url"));
 
 		LandingPage lp = new LandingPage(driver);
 		lp.getLogin().click();
@@ -23,6 +32,10 @@ public class HomePage_Test extends BasePage {
 		log.getEmail().sendKeys(username);
 		log.getPassword().sendKeys(password);
 		log.getSubmit().click();
+	}
+	@AfterTest
+	public void tearDown(){
+		driver.close();
 	}
 
 	@DataProvider
@@ -42,5 +55,7 @@ public class HomePage_Test extends BasePage {
 
 		return data;
 	}
+	
+
 
 }
