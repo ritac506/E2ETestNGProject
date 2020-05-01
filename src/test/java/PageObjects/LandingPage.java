@@ -8,9 +8,9 @@ public class LandingPage {
 	
 	public WebDriver driver;
 	
-	By loginButton=By.xpath("//span[contains(text(),'Login')]");
-	By title=By.cssSelector(".text-center>h2");
-	By navbar=By.xpath("//nav[@class='navbar-collapse collapse']");
+	private By loginButton=By.xpath("//span[contains(text(),'Login')]");
+	private By title=By.cssSelector(".text-center>h2");
+	private By navbar=By.xpath("//nav[@class='navbar-collapse collapse']");
 	
 	
 	public LandingPage(WebDriver driver)

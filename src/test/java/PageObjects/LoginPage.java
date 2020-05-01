@@ -8,9 +8,9 @@ public class LoginPage {
 	
 public WebDriver driver;
 	
-	By emailBox=By.id("user_email");	
-	By password=By.id("user_password");
-	By submit=By.xpath("//input[@name='commit']");
+	private By emailBox=By.id("user_email");	
+	private By password=By.id("user_password");
+	private By submit=By.xpath("//input[@name='commit']");
 	
 	
 	public LoginPage(WebDriver driver)

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.166 s - in TestSuite
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 9, Time elapsed: 2.461 s <<< FAILURE! - in TestSuite
+FinalProject.HomePage_Test.getLanding  Time elapsed: 1.617 s  <<< FAILURE!
+java.lang.NullPointerException
+	at FinalProject.HomePage_Test.getLanding(HomePage_Test.java:19)
+

@@ -8,11 +8,11 @@ import java.sql.Driver;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 
 public class BasePage {
@@ -25,20 +25,34 @@ public class BasePage {
 		
 		
 		 prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\Rita\\eclipse-workspace\\E2EProject\\src\\test\\java\\resources\\propertyFile");
+		
+		//System.getProperty("user.dir")  ==>prints dynamic current path to avoid hardcoding
+		//we need to replace 'C:\\Users\\Rita\\eclipse-workspace\\E2EProject' to dynamic path
+		//FileInputStream fis=new FileInputStream("C:\\Users\\Rita\\eclipse-workspace\\E2EProject\\src\\test\\java\\resources\\propertyFile");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\propertyFile");
+
 		prop.load(fis);
 		
+		
+		
+		//mvn test -Dbrowser=chrome
+		
+		//String browserName=System.getProperty("browser");
 		String browserName=prop.getProperty("browser");
+		
 		
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:/Users/Rita/Pictures/chromedriver.exe");
+			//we need to replace hard coding location on desktop to dynamic (other users) with System.getProperty("user.dir")
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\java\\resources\\chromedriver.exe");
+			
 			driver = new ChromeDriver();
 			
 		}
 		else if (browserName.equals("firefox"))
 		{
-			//code
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Rita\\Pictures\\geckodriver.exe");
+			driver=new FirefoxDriver();
 		}
 		else
 		{

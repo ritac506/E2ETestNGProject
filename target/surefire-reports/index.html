@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,36 +90,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FinalProject.ValidationNavbar" class="method navigator-link" hash-for-method="NavigateToBasePage">NavigateToBasePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FinalProject.HomePage_Test" class="method navigator-link" hash-for-method="NavigateToBasePage(qwer@asfr.com, 3456)">NavigateToBasePage(qwer@asfr.com, 3456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FinalProject.HomePage_Test" class="method navigator-link" hash-for-method="NavigateToBasePage(rie@asdf.com, 1234)">NavigateToBasePage(rie@asdf.com, 1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="FinalProject.ValidationTitlePage" class="method navigator-link" hash-for-method="NavigateToFirstPage">NavigateToFirstPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -131,9 +131,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">FinalProject.ValidationTitlePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,10 +145,10 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">FinalProject.HomePage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -169,10 +169,10 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">FinalProject.ValidationNavbar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -184,7 +184,7 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -195,6 +195,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;FinalProject.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;FinalProject.ValidationTitlePage&quot;/&gt;
@@ -241,26 +245,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NavigateToBasePage')
-data.setCell(0, 2, 'FinalProject.HomePage_Test')
-data.setCell(0, 3, 13789);
+data.setCell(0, 1, 'NavigateToFirstPage')
+data.setCell(0, 2, 'FinalProject.ValidationTitlePage')
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'NavigateToBasePage')
-data.setCell(1, 2, 'FinalProject.HomePage_Test')
-data.setCell(1, 3, 9023);
+data.setCell(1, 2, 'FinalProject.ValidationNavbar')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'NavigateToFirstPage')
-data.setCell(2, 2, 'FinalProject.ValidationTitlePage')
-data.setCell(2, 3, 1136);
+data.setCell(2, 1, 'NavigateToBasePage')
+data.setCell(2, 2, 'FinalProject.HomePage_Test')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'NavigateToBasePage')
-data.setCell(3, 2, 'FinalProject.ValidationNavbar')
-data.setCell(3, 3, 151);
+data.setCell(3, 2, 'FinalProject.HomePage_Test')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -288,63 +292,36 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">FinalProject.HomePage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getLanding</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">FinalProject.ValidationNavbar</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">getLanding</span>
-                <span class="method-start">5779 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">FinalProject.ValidationTitlePage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">getLanding</span>
-                <span class="method-start">14688 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">NavigateToFirstPage</span>
-                <span class="method-start">24203 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">FinalProject.ValidationNavbar</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NavigateToBasePage</span>
-                <span class="method-start">25339 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">FinalProject.HomePage_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NavigateToBasePage(rie@asdf.com, 1234)</span>
-                <span class="method-start">25493 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">NavigateToBasePage(qwer@asfr.com, 3456)</span>
-                <span class="method-start">39283 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48309 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">FinalProject.ValidationNavbar</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48606 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">FinalProject.ValidationTitlePage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48864 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
