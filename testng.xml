@@ -3,7 +3,7 @@
 <suite name="Suite">
 <listeners>
 <listener class-name="FinalProject.Listeners"/>
-
+<listener class-name="resources.ExtentReporterNG"/>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>

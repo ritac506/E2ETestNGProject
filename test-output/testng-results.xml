@@ -2,36 +2,36 @@
 <testng-results total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-01T02:52:50Z" name="Suite" finished-at="2020-05-01T02:53:41Z" duration-ms="50324">
+  <suite started-at="2020-05-01T14:44:59Z" name="Suite" finished-at="2020-05-01T14:45:54Z" duration-ms="54636">
     <groups>
     </groups>
-    <test started-at="2020-05-01T02:52:50Z" name="Test" finished-at="2020-05-01T02:53:41Z" duration-ms="50324">
+    <test started-at="2020-05-01T14:44:59Z" name="Test" finished-at="2020-05-01T14:45:54Z" duration-ms="54636">
       <class name="FinalProject.ValidationNavbar">
-        <test-method signature="NavigateToBasePage()[pri:0, instance:FinalProject.ValidationNavbar@5829e4f4]" started-at="2020-04-30T21:53:18Z" name="NavigateToBasePage" finished-at="2020-04-30T21:53:18Z" duration-ms="96" status="PASS">
+        <test-method signature="NavigateToBasePage()[pri:0, instance:FinalProject.ValidationNavbar@55562aa9]" started-at="2020-05-01T09:45:23Z" name="NavigateToBasePage" finished-at="2020-05-01T09:45:24Z" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToBasePage -->
       </class> <!-- FinalProject.ValidationNavbar -->
       <class name="FinalProject.ValidationTitlePage">
-        <test-method signature="NavigateToFirstPage()[pri:0, instance:FinalProject.ValidationTitlePage@4218500f]" started-at="2020-04-30T21:53:17Z" name="NavigateToFirstPage" finished-at="2020-04-30T21:53:18Z" duration-ms="535" status="PASS">
+        <test-method signature="NavigateToFirstPage()[pri:0, instance:FinalProject.ValidationTitlePage@4566d049]" started-at="2020-05-01T09:45:23Z" name="NavigateToFirstPage" finished-at="2020-05-01T09:45:23Z" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToFirstPage -->
       </class> <!-- FinalProject.ValidationTitlePage -->
       <class name="FinalProject.HomePage_Test">
-        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.HomePage_Test@1dd6d4b7]" started-at="2020-04-30T21:52:50Z" name="getLanding" finished-at="2020-04-30T21:52:56Z" duration-ms="6068" status="PASS">
+        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.HomePage_Test@655ef322]" started-at="2020-05-01T09:44:59Z" name="getLanding" finished-at="2020-05-01T09:45:05Z" duration-ms="5803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLanding -->
-        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.ValidationNavbar@5829e4f4]" started-at="2020-04-30T21:52:56Z" name="getLanding" finished-at="2020-04-30T21:53:06Z" duration-ms="9195" status="PASS">
+        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.ValidationNavbar@55562aa9]" started-at="2020-05-01T09:45:05Z" name="getLanding" finished-at="2020-05-01T09:45:14Z" duration-ms="8434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLanding -->
-        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.ValidationTitlePage@4218500f]" started-at="2020-04-30T21:53:06Z" name="getLanding" finished-at="2020-04-30T21:53:17Z" duration-ms="11658" status="PASS">
+        <test-method is-config="true" signature="getLanding()[pri:0, instance:FinalProject.ValidationTitlePage@4566d049]" started-at="2020-05-01T09:45:14Z" name="getLanding" finished-at="2020-05-01T09:45:23Z" duration-ms="9140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLanding -->
-        <test-method signature="NavigateToBasePage(java.lang.String, java.lang.String)[pri:0, instance:FinalProject.HomePage_Test@1dd6d4b7]" started-at="2020-04-30T21:53:18Z" name="NavigateToBasePage" data-provider="getData" finished-at="2020-04-30T21:53:29Z" duration-ms="11366" status="PASS">
+        <test-method signature="NavigateToBasePage(java.lang.String, java.lang.String)[pri:0, instance:FinalProject.HomePage_Test@655ef322]" started-at="2020-05-01T09:45:24Z" name="NavigateToBasePage" data-provider="getData" finished-at="2020-05-01T09:45:41Z" duration-ms="17527" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToBasePage -->
-        <test-method signature="NavigateToBasePage(java.lang.String, java.lang.String)[pri:0, instance:FinalProject.HomePage_Test@1dd6d4b7]" started-at="2020-04-30T21:53:29Z" name="NavigateToBasePage" data-provider="getData" finished-at="2020-04-30T21:53:40Z" duration-ms="10602" status="PASS">
+        <test-method signature="NavigateToBasePage(java.lang.String, java.lang.String)[pri:0, instance:FinalProject.HomePage_Test@655ef322]" started-at="2020-05-01T09:45:41Z" name="NavigateToBasePage" data-provider="getData" finished-at="2020-05-01T09:45:49Z" duration-ms="8329" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,15 +63,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToBasePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.HomePage_Test@1dd6d4b7]" started-at="2020-04-30T21:53:40Z" name="tearDown" finished-at="2020-04-30T21:53:40Z" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.HomePage_Test@655ef322]" started-at="2020-05-01T09:45:49Z" name="tearDown" finished-at="2020-05-01T09:45:54Z" duration-ms="4164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.ValidationNavbar@5829e4f4]" started-at="2020-04-30T21:53:40Z" name="tearDown" finished-at="2020-04-30T21:53:40Z" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.ValidationNavbar@55562aa9]" started-at="2020-05-01T09:45:54Z" name="tearDown" finished-at="2020-05-01T09:45:54Z" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.ValidationTitlePage@4218500f]" started-at="2020-04-30T21:53:40Z" name="tearDown" finished-at="2020-04-30T21:53:41Z" duration-ms="288" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FinalProject.ValidationTitlePage@4566d049]" started-at="2020-05-01T09:45:54Z" name="tearDown" finished-at="2020-05-01T09:45:54Z" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

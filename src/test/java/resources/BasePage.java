@@ -1,6 +1,7 @@
 package resources;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Driver;
@@ -50,7 +51,9 @@ public class BasePage {
 	public void screenShot(String result) throws IOException {
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(src,new File("C:\\screenshotTest"+result+"screenshot.png"));
+		FileHandler.copy(src,new File("C:\\Users\\Rita\\eclipse-workspace\\E2EProject\\"+result+"screenshot.png"));
+//		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		FileHandler.copy(src, new File("C://test//"+result+"screenshot.png"));
 	}
 
 
