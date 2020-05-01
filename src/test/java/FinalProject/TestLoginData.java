@@ -12,7 +12,7 @@ import PageObjects.LandingPage;
 import PageObjects.LoginPage;
 import resources.BasePage;
 
-public class HomePage_Test extends BasePage {
+public class TestLoginData extends BasePage {
 	
 	@BeforeTest
 	public void getLanding() throws IOException {

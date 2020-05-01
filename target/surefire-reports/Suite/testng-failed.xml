@@ -20,6 +20,7 @@
       </class> <!-- FinalProject.HomePage_Test -->
       <class name="FinalProject.ValidationNavbar">
         <methods>
+          <include name="getLanding"/>
           <include name="NavigateToBasePage"/>
         </methods>
       </class> <!-- FinalProject.ValidationNavbar -->
