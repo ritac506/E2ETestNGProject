@@ -1,13 +1,18 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Driver;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.core.util.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
 
 public class BasePage {
 	
@@ -41,6 +46,11 @@ public class BasePage {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		return driver;//we returning webdriver back so we can use them in test cases
 	
+	}
+	public void screenShot(String result) throws IOException {
+		
+		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(src,new File("C:\\screenshotTest"+result+"screenshot.png"));
 	}
 
 
