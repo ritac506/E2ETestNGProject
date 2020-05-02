@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="FinalProject.ValidationTitlePage">
+      <class name="FinalProject.TestLandingPage">
         <methods>
-          <include name="validateTitle"/>
-          <include name="getLanding"/>
+          <include name="Test3"/>
           <include name="tearDown"/>
+          <include name="getLanding"/>
         </methods>
-      </class> <!-- FinalProject.ValidationTitlePage -->
+      </class> <!-- FinalProject.TestLandingPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

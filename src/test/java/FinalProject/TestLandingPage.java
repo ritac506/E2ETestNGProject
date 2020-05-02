@@ -57,10 +57,11 @@ public class TestLandingPage extends BasePage{
 		//validating that navigation bar is displayed
 				lp.getNavbar();
 				Assert.assertTrue(lp.getNavbar().isDisplayed());
-				log.info("Navbar is displayed");
-				
-		
-		
+				log.info("Navbar is displayed");		
+	}
+	@Test(testName="checking header message: An Academy to learn Everything about Testing ")
+	public void Test3() {
+		Assert.assertEquals(lp.validateHeader().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
 	}
 	@AfterTest
 	public void tearDown(){
