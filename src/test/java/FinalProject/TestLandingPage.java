@@ -33,6 +33,7 @@ public class TestLandingPage extends BasePage{
 	public void getLanding() throws IOException {
 	driver = InitDriver();
 	driver.get(prop.getProperty("url"));
+	System.out.println(driver.getTitle());
 	log.info("Driver is initialized");
 	}
 	
@@ -44,13 +45,14 @@ public class TestLandingPage extends BasePage{
 		
 		 lp = new LandingPage(driver);
 		//compare text from browser to actual value. In TestNG we use assertion methods
-		String actual=lp.getTitle().getText();
+		String actual=lp.checkFeatCourses().getText();
 		Assert.assertEquals(actual, "FEATURED COURSES");
 		
 		
 	}
 	@Test (testName=" checking navigation bar")
-	public void validateTitle() throws IOException {
+	public void Test2() throws IOException {
+		lp=new LandingPage(driver);
 		
 		//validating that navigation bar is displayed
 				lp.getNavbar();

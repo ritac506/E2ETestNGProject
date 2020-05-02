@@ -17,6 +17,7 @@ public class TestLoginData extends BasePage {
 	@BeforeTest
 	public void getLanding() throws IOException {
 	driver = InitDriver();
+	System.out.println(driver.getTitle());
 
 	}
 

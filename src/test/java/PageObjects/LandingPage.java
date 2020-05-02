@@ -8,8 +8,9 @@ public class LandingPage {
 	
 	public WebDriver driver;
 	
+	
 	private By loginButton=By.xpath("//span[contains(text(),'Login')]");
-	private By title=By.cssSelector(".text-center>h2");
+	private By featCourses=By.cssSelector(".text-center>h2");
 	private By navbar=By.xpath("//nav[@class='navbar-collapse collapse']");
 	
 	
@@ -23,9 +24,9 @@ public class LandingPage {
 		return driver.findElement(loginButton);
 	}
 	
-	public WebElement getTitle()
+	public WebElement checkFeatCourses()
 	{
-		return driver.findElement(title);
+		return driver.findElement(featCourses);
 	}
 	
 	public WebElement getNavbar()
